@@ -8,6 +8,7 @@ import { Root1Component } from './root1/root1.component';
 import { Root2Component } from './root2/root2.component';
 
 const appRoutes: Routes = [
+    { path: '', redirectTo: 'root1', pathMatch: 'full' },
     { path: 'root1', component: Root1Component },
     { path: 'root2', component: Root2Component }
 ];

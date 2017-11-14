@@ -13,6 +13,7 @@ var app_component_1 = require("./app.component");
 var root1_component_1 = require("./root1/root1.component");
 var root2_component_1 = require("./root2/root2.component");
 var appRoutes = [
+    { path: '', redirectTo: 'root1', pathMatch: 'full' },
     { path: 'root1', component: root1_component_1.Root1Component },
     { path: 'root2', component: root2_component_1.Root2Component }
 ];

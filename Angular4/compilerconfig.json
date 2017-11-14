@@ -6,5 +6,9 @@
   {
     "outputFile": "Contents/css/StyleSheet1.css",
     "inputFile": "Contents/css/StyleSheet1.less"
+  },
+  {
+    "outputFile": "Contents/css/default.css",
+    "inputFile": "Contents/css/default.less"
   }
 ]

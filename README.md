@@ -107,8 +107,8 @@
 }
 ```
 ### Nástroje:
-[Dillinger](https://dillinger.io/) pro ReadMe
-[JSON Editor Online](http://jsoneditoronline.org/) pro Json objects
+-[Dillinger](https://dillinger.io/) pro ReadMe
+-[JSON Editor Online](http://jsoneditoronline.org/) pro Json objects
 
 License
 ----

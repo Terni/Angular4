@@ -307,3 +307,5 @@ OpenCover/
 
 # all packages 
 packages/
+Angular4/dist/
+

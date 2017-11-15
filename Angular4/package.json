@@ -12,28 +12,38 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "angular",
+    "gulp",
+    "webpack",
+    "systemjs",
+    "systemjs builder",
+    "karma"
+  ],
+  "author": "Ing. Tomas Prokop",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Terni/Angular4"
+  },
   "dependencies": {
-    "@angular/common": "~4.0.2",
-    "@angular/compiler": "~4.0.2",
-    "@angular/core": "~4.0.2",
-    "@angular/forms": "~4.0.2",
-    "@angular/http": "~4.0.2",
-    "@angular/platform-browser": "~4.0.2",
-    "@angular/platform-browser-dynamic": "~4.0.2",
-    "@angular/router": "~4.0.2",
+    "@angular/common": "~4.4.3",
+    "@angular/compiler": "~4.4.3",
+    "@angular/core": "~4.4.3",
+    "@angular/forms": "~4.4.3",
+    "@angular/http": "~4.4.3",
+    "@angular/platform-browser": "~4.4.3",
+    "@angular/platform-browser-dynamic": "~4.4.3",
+    "@angular/router": "~4.4.3",
     "angular-in-memory-web-api": "~0.2.4",
-    "systemjs": "0.19.40",
-    "core-js": "^2.4.1",
-    "rxjs": "~5.0.1",
-    "zone.js": "^0.7.4"
+    "systemjs": "^0.20.19",
+    "core-js": "^2.5.1",
+    "rxjs": "~5.4.3",
+    "zone.js": "^0.8.17"
   },
   "devDependencies": {
     "concurrently": "^3.2.0",
     "lite-server": "^2.2.2",
-    "typescript": "~2.2.1",
+    "typescript": "~2.5.2",
     "canonical-path": "0.0.2",
     "tslint": "^3.15.1",
     "lodash": "^4.16.4",
@@ -47,14 +57,15 @@
     "rimraf": "^2.5.4",
     "@types/node": "^6.0.46",
     "@types/jasmine": "2.5.36",
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.7",
     "ts-loader": "^0.7.2",
-    "webpack": "2.3.2",
-    "webpack-dev-middleware": "1.10.1",
-    "webpack-dev-server": "2.4.2",
-    "webpack-md5-hash": "0.0.5",
-    "webpack-merge": "0.14.1"
+    "path": "^0.12.7",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0"
   },
   "repository": {}
 }

@@ -6,12 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var Root2Component = (function () {
-    function Root2Component() {
-    }
-    return Root2Component;
-}());
+const core_1 = require("@angular/core");
+let Root2Component = class Root2Component {
+};
 Root2Component = __decorate([
     core_1.Component({
         templateUrl: 'root2.component.html',

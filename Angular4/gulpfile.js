@@ -10,7 +10,7 @@ gulp.task('copy', ['clean'], function() {
     return gulp.src([
         'index.html',
         'app/**/*.html',
-		'contents/*.*'
+		'Contents/**/*'
     ])
     .pipe(gulp.dest('dist'));
 });

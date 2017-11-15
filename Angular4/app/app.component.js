@@ -6,18 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+const core_1 = require("@angular/core");
+let AppComponent = class AppComponent {
+    constructor() {
         this.name = 'Angular 4';
     }
-    return AppComponent;
-}());
+};
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: 'app.component.html',
-        //styleUrls: [ 'app.component.css'],
         moduleId: module.id
     })
 ], AppComponent);

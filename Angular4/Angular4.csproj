@@ -84,20 +84,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.css" />
     <Content Include="app\app.component.html" />
     <Content Include="app\root1\root1.component.html" />
     <Content Include="app\root2\root2.component.html" />
-    <Content Include="Contents\js\browser-polyfill.min.js" />
+    <Content Include="Contents\css\Boostrap\bootstrap-grid.css" />
+    <Content Include="Contents\css\Boostrap\bootstrap-grid.min.css" />
+    <Content Include="Contents\css\Boostrap\bootstrap-reboot.css" />
+    <Content Include="Contents\css\Boostrap\bootstrap-reboot.min.css" />
+    <Content Include="Contents\css\Boostrap\bootstrap.css" />
+    <Content Include="Contents\css\Boostrap\bootstrap.min.css" />
+    <Content Include="Contents\css\default.css">
+      <DependentUpon>default.less</DependentUpon>
+    </Content>
+    <Content Include="Contents\css\default.min.css">
+      <DependentUpon>default.css</DependentUpon>
+    </Content>
+    <Content Include="Contents\css\fonts\feather.css" />
+    <Content Include="Contents\css\fonts\linecons.css" />
+    <Content Include="Contents\css\fonts\steadysets.css" />
+    <Content Include="Contents\css\fonts\vicons.css" />
+    <Content Include="Contents\css\Igrowl\animate.css" />
+    <Content Include="Contents\css\Igrowl\igrowl.min.css" />
+    <Content Include="Contents\images\brand.png" />
+    <Content Include="Contents\js\Bootstrap\bootstrap.js" />
+    <Content Include="Contents\js\Bootstrap\bootstrap.min.js" />
+    <Content Include="Contents\js\Bootstrap\popper.js" />
+    <Content Include="Contents\js\IGrowl\igrowl.min.js" />
+    <Content Include="Contents\js\JQuery\jquery-3.2.1.min.js" />
+    <Content Include="Contents\js\JQuery\jquery-ui.min.js" />
+    <Content Include="Contents\js\Polyfill\browser-polyfill.min.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
-    <Content Include="styles.css" />
-    <Content Include="Contents\css\StyleSheet1.css">
-      <DependentUpon>StyleSheet1.less</DependentUpon>
-    </Content>
-    <Content Include="Contents\css\StyleSheet1.min.css">
-      <DependentUpon>StyleSheet1.css</DependentUpon>
-    </Content>
     <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -112,11 +129,17 @@
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="Contents\css\StyleSheet1.less" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Contents\css\Boostrap\bootstrap-grid.css.map" />
+    <Content Include="Contents\css\Boostrap\bootstrap-grid.min.css.map" />
+    <Content Include="Contents\css\Boostrap\bootstrap-reboot.css.map" />
+    <Content Include="Contents\css\Boostrap\bootstrap-reboot.min.css.map" />
+    <Content Include="Contents\css\Boostrap\bootstrap.css.map" />
+    <Content Include="Contents\css\Boostrap\bootstrap.min.css.map" />
+    <Content Include="Contents\css\default.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

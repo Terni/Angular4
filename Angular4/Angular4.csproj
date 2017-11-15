@@ -114,9 +114,11 @@
     <Content Include="Contents\js\JQuery\jquery-ui.min.js" />
     <Content Include="Contents\js\Polyfill\browser-polyfill.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="systemjs.config.js" />
     <Content Include="Web.config" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -128,7 +130,6 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="package.json" />
-    <Content Include="tsconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -140,6 +141,8 @@
     <Content Include="Contents\css\Boostrap\bootstrap.css.map" />
     <Content Include="Contents\css\Boostrap\bootstrap.min.css.map" />
     <Content Include="Contents\css\default.less" />
+    <Content Include="typings.json" />
+    <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,9 +161,11 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\polyfill.ts" />
     <TypeScriptCompile Include="app\root1\root1.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\root2\root2.component.ts" />
+    <TypeScriptCompile Include="app\vendor.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

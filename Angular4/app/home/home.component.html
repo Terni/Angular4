@@ -1,0 +1,51 @@
+﻿<h1>Seznam restaurací</h1>
+
+<div class="container">
+    <h5>Vyber restauraci pro zobrazení týdenního menu.</h5>
+    <div id="List">
+        <!--Dynamic content-->
+        <div class="row">
+            <div class="col-11">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="'neco'">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Název restaurace</h5>
+                        <small>Pondělí</small>
+                    </div>
+                    <ol>
+                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
+                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
+                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
+                    </ol>
+                    <p class="mb-1">*Poznámka: text text ...</p>
+                </a>
+            </div>
+            <div class="col-1">
+                <button type="button" class="btn btn-block btn-info " id="DetailButton" data-toggle="modal" data-target="#DetailModal" data-RestName="Název restaurace" data-FullDescription="test">?</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!--<hr />-->
+    <!--<button class="btn btn-block btn-success" id="SendWantedPositionsButton">Odeslat</button>-->
+</div>
+<!--<hr />-->
+
+<div class="modal fade" id="DetailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Informace o restauraci</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

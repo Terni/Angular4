@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'root2.component.html',
+    templateUrl: 'menuList.component.html',
     moduleId: module.id
 })
-export class Root2Component { }
+export class MenuListComponent { }

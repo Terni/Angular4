@@ -7,13 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-let Root1Component = class Root1Component {
+let ManagerComponent = class ManagerComponent {
 };
-Root1Component = __decorate([
+ManagerComponent = __decorate([
     core_1.Component({
-        templateUrl: 'root1.component.html',
+        templateUrl: 'manager.component.html',
         moduleId: module.id
     })
-], Root1Component);
-exports.Root1Component = Root1Component;
-//# sourceMappingURL=root1.component.js.map
+], ManagerComponent);
+exports.ManagerComponent = ManagerComponent;
+//# sourceMappingURL=manager.component.js.map

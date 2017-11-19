@@ -1,4 +1,5 @@
 ﻿body {
+  background-color: #e3f2fd;
   /*font-family: Roboto;*/
 }
 body h {
@@ -25,4 +26,31 @@ body .height50px {
 }
 body .height60px {
   height: 60px;
+}
+body .baseDiv {
+  text-align: left;
+}
+body .baseText {
+  color: black;
+  font-size: large;
+  font-style: oblique;
+}
+body .alignleft {
+  text-align: left;
+}
+body .alignright {
+  float: right;
+  padding: 0 50px 0 0;
+}
+body ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+body li {
+  display: list-item;
 }

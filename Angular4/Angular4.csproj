@@ -106,6 +106,7 @@
     <Content Include="Contents\css\Igrowl\animate.css" />
     <Content Include="Contents\css\Igrowl\igrowl.min.css" />
     <Content Include="Contents\images\brand.png" />
+    <Content Include="Contents\images\menu.jpg" />
     <Content Include="Contents\js\Bootstrap\bootstrap.js" />
     <Content Include="Contents\js\Bootstrap\bootstrap.min.js" />
     <Content Include="Contents\js\Bootstrap\popper.js" />

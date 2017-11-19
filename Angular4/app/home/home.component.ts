@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'root1.component.html',
+    templateUrl: 'home.component.html',
     moduleId: module.id
 })
-export class Root1Component { }
+export class HomeComponent { }

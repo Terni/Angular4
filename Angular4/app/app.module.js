@@ -10,12 +10,16 @@ const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const router_1 = require("@angular/router");
 const app_component_1 = require("./app.component");
-const root1_component_1 = require("./root1/root1.component");
-const root2_component_1 = require("./root2/root2.component");
+const home_component_1 = require("./home/home.component");
+const menuList_component_1 = require("./menu/menuList.component");
+const manager_component_1 = require("./manager/manager.component");
+const login_component_1 = require("./login/login.component");
 const appRoutes = [
-    { path: '', redirectTo: 'root1', pathMatch: 'full' },
-    { path: 'root1', component: root1_component_1.Root1Component },
-    { path: 'root2', component: root2_component_1.Root2Component }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'menu', component: menuList_component_1.MenuListComponent },
+    { path: 'manager', component: manager_component_1.ManagerComponent },
+    { path: 'login', component: login_component_1.LoginComponent }
 ];
 let AppModule = class AppModule {
 };
@@ -27,8 +31,10 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            root1_component_1.Root1Component,
-            root2_component_1.Root2Component
+            home_component_1.HomeComponent,
+            menuList_component_1.MenuListComponent,
+            manager_component_1.ManagerComponent,
+            login_component_1.LoginComponent
         ],
         bootstrap: [
             app_component_1.AppComponent

@@ -4,15 +4,18 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-import { Root1Component } from './root1/root1.component';
-import { Root2Component } from './root2/root2.component';
+import { HomeComponent } from './home/home.component';
+import { MenuListComponent } from './menu/menuList.component';
+import { ManagerComponent } from './manager/manager.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: 'root1', pathMatch: 'full' },
-    { path: 'root1', component: Root1Component },
-    { path: 'root2', component: Root2Component }
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', component: HomeComponent },
+    { path: 'menu', component: MenuListComponent },
+    { path: 'manager', component: ManagerComponent },
+    { path: 'login', component: LoginComponent }
 ];
-
 
 @NgModule({
     imports:
@@ -22,8 +25,10 @@ const appRoutes: Routes = [
     ],
     declarations: [
         AppComponent,
-        Root1Component,
-        Root2Component
+        HomeComponent,
+        MenuListComponent,
+        ManagerComponent,
+        LoginComponent
     ],
     bootstrap: [
         AppComponent

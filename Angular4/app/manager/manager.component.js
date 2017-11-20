@@ -11,8 +11,7 @@ let ManagerComponent = class ManagerComponent {
 };
 ManagerComponent = __decorate([
     core_1.Component({
-        templateUrl: 'manager.component.html',
-        moduleId: module.id
+        templateUrl: './app/manager/manager.component.html',
     })
 ], ManagerComponent);
 exports.ManagerComponent = ManagerComponent;

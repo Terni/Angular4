@@ -9,6 +9,7 @@ var webpackConfig = require('./webpack.config.js');
 gulp.task('copy', ['clean'], function() {
     return gulp.src([
         'index.html',
+        'favicon.ico',
         'app/**/*.html',
 		'Contents/**/*'
     ])
@@ -33,7 +34,7 @@ gulp.task('build', ['clean'], function(callback) {
             }
         }),
         new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin()
+        //new webpack.optimize.UglifyJsPlugin()
     );
     // run webpack
     webpack(myConfig, function(err, stats) {

@@ -11,8 +11,7 @@ let HomeComponent = class HomeComponent {
 };
 HomeComponent = __decorate([
     core_1.Component({
-        templateUrl: 'home.component.html',
-        moduleId: module.id
+        templateUrl: './app/home/home.component.html',
     })
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;

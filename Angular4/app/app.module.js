@@ -15,7 +15,7 @@ const menuList_component_1 = require("./menu/menuList.component");
 const manager_component_1 = require("./manager/manager.component");
 const login_component_1 = require("./login/login.component");
 const appRoutes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', component: home_component_1.HomeComponent, pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'menu', component: menuList_component_1.MenuListComponent },
     { path: 'manager', component: manager_component_1.ManagerComponent },

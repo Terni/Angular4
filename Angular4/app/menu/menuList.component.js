@@ -11,8 +11,7 @@ let MenuListComponent = class MenuListComponent {
 };
 MenuListComponent = __decorate([
     core_1.Component({
-        templateUrl: 'menuList.component.html',
-        moduleId: module.id
+        templateUrl: './app/menu/menuList.component.html',
     })
 ], MenuListComponent);
 exports.MenuListComponent = MenuListComponent;

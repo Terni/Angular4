@@ -10,7 +10,7 @@ import { ManagerComponent } from './manager/manager.component';
 import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'menu', component: MenuListComponent },
     { path: 'manager', component: ManagerComponent },

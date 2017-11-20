@@ -11,8 +11,7 @@ let LoginComponent = class LoginComponent {
 };
 LoginComponent = __decorate([
     core_1.Component({
-        templateUrl: 'login.component.html',
-        moduleId: module.id
+        templateUrl: './app/login/login.component.html',
     })
 ], LoginComponent);
 exports.LoginComponent = LoginComponent;

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: 'manager.component.html',
-    moduleId: module.id
+    templateUrl: './app/manager/manager.component.html',
+    //moduleId: module.id
 })
 export class ManagerComponent { }

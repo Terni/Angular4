@@ -84,9 +84,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.html" />
-    <Content Include="app\root1\root1.component.html" />
-    <Content Include="app\root2\root2.component.html" />
+    <Content Include="app\nav\app.component.html" />
+    <Content Include="app\home\home.component.html" />
+    <Content Include="app\login\login.component.html" />
+    <Content Include="app\manager\manager.component.html" />
+    <Content Include="app\menu\menuList.component.html" />
     <Content Include="Contents\css\Boostrap\bootstrap-grid.css" />
     <Content Include="Contents\css\Boostrap\bootstrap-grid.min.css" />
     <Content Include="Contents\css\Boostrap\bootstrap-reboot.css" />
@@ -160,12 +162,14 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\nav\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\login\login.component.ts" />
+    <TypeScriptCompile Include="app\manager\manager.component.ts" />
     <TypeScriptCompile Include="app\polyfill.ts" />
-    <TypeScriptCompile Include="app\root1\root1.component.ts" />
+    <TypeScriptCompile Include="app\home\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
-    <TypeScriptCompile Include="app\root2\root2.component.ts" />
+    <TypeScriptCompile Include="app\menu\menuList.component.ts" />
     <TypeScriptCompile Include="app\vendor.ts" />
   </ItemGroup>
   <PropertyGroup>

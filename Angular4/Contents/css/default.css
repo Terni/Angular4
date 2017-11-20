@@ -1,6 +1,31 @@
 ﻿body {
   background-color: #e3f2fd;
   /*font-family: Roboto;*/
+  /*********************************************************/
+  /***login*************************************************/
+  /* Bordered form */
+  /* Full-width inputs */
+  /*input[type=text], input[type=password] {
+        width: 100%;
+        //padding: 12px 20px;
+        margin: 8px 0;
+        //display: inline-block;
+        //border: 1px solid #ccc;
+        //box-sizing: border-box;
+    }*/
+  /* Set a style for all buttons */
+  /* Add a hover effect for buttons */
+  /* Avatar image */
+  /*
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }*/
+  /* Add padding to containers */
 }
 body h {
   font-size: large;
@@ -53,4 +78,29 @@ body ol {
 }
 body li {
   display: list-item;
+}
+body form {
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(46, 109, 222, 0.22), 0 6px 20px 0 rgba(46, 109, 222, 0.27);
+}
+body .loginForm {
+  width: 500px;
+}
+body .editForm {
+  margin: 0 20px 20px 20px;
+}
+body button {
+  cursor: pointer;
+}
+body button:hover {
+  opacity: 0.8;
+}
+body .container {
+  padding: 12px;
+  max-width: 100%;
+}
+body .containerSpc {
+  padding: 8px 12px 12px 20px;
+  max-width: 100%;
 }

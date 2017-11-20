@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
 const router_1 = require("@angular/router");
-const app_component_1 = require("./app.component");
+const app_component_1 = require("./nav/app.component");
 const home_component_1 = require("./home/home.component");
 const menuList_component_1 = require("./menu/menuList.component");
 const manager_component_1 = require("./manager/manager.component");

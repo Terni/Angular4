@@ -308,5 +308,6 @@ OpenCover/
 # all packages 
 packages/
 Angular4/dist/
-
 Angular4/dist.rar
+Angular4/app/**/*.js
+Angular4/app/**/*.js.map

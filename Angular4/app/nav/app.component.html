@@ -18,7 +18,8 @@
             <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active">Domů</a>
             <a class="nav-item nav-link" routerLink="/menu" routerLinkActive="active">Menu</a>
             <a class="nav-item nav-link" routerLink="/manager" routerLinkActive="active">Editace</a>
-            <a class="nav-item nav-link" routerLink="/login" routerLinkActive="active">Přihlásit</a>
+            <a *ngIf="!visible" class="nav-item nav-link" routerLink="/login" routerLinkActive="active">Přihlásit</a>
+            <a *ngIf="visible" class="nav-item nav-link" routerLink="/login" routerLinkActive="active">Odhlásit</a>
         </div>
     </div>
     <!--<form class="form-inline">

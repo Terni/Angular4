@@ -1,11 +1,13 @@
 # Angular4
 ## Zadání: Vytvořte aplikaci pro tvorbu online menu pokrmů pro restaurace.
 
-- Na hlavní stránce se vypíšou všechny restaurace s platným menu a náhledem menu pro daný den a uživatel také bude mít možnost změnit "datum" aby se podíval hromadně na menu pro daný den ve všech restauracích.
+- [ ] Na hlavní stránce se vypíšou všechny restaurace s platným menu a náhledem menu pro daný den
+- [ ] a uživatel také bude mít možnost změnit "datum" aby se podíval hromadně na menu pro daný den ve všech restauracích.
 
-- Po kliknutí na konkrétní restauraci se ukáže celé menu na celý týden s možností přecházet na další týdny.
+- [ ] Po kliknutí na konkrétní restauraci se ukáže celé menu na celý týden s možností přecházet na další týdny.
 
-- Aplikace také bude obsahovat primitivní administraci (statické přihlašovací údaje admin/admin) ve které bude možno přidat/upravit/smazat menu k dané restauraci. Výběr restaurace bude ze statického seznamu a restaurace nepůjdou nijak měnit.
+- [x] Aplikace také bude obsahovat primitivní administraci (statické přihlašovací údaje admin/admin)
+- [ ] ve které bude možno přidat/upravit/smazat menu k dané restauraci. Výběr restaurace bude ze statického seznamu a restaurace nepůjdou nijak měnit.
 
 >Pro statické data použijte ideálně JSON soubory (například prvotní načtení meníček, seznam restaurací...), pro data vytvořené nově použijte Local Storage. 
 

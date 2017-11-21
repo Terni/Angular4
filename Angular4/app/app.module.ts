@@ -1,27 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
+// used to create fake backend
+import { fakeBackendProvider } from './_helpers/index';
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { BaseRequestOptions } from '@angular/http';
+
+// Nav bar and routing modul
 import { AppComponent } from './nav/app.component';
+import { routing } from './app.routing';
 
-import { HomeComponent } from './home/home.component';
-import { MenuListComponent } from './menu/menuList.component';
-import { ManagerComponent } from './manager/manager.component';
-import { LoginComponent } from './login/login.component';
+// My main pages
+import { HomeComponent } from './home/index';
+import { MenuListComponent } from './menu/index';
+import { ManagerComponent } from './manager/index';
+import { LoginComponent } from './login/index';
 
-const appRoutes: Routes = [
-    { path: '', component: HomeComponent, pathMatch: 'full' },
-    { path: 'home', component: HomeComponent },
-    { path: 'menu', component: MenuListComponent },
-    { path: 'manager', component: ManagerComponent },
-    { path: 'login', component: LoginComponent }
-];
+//Login guard and services for currentUser
+import { AuthGuard } from './_guards/index';
+import { AuthenticationService, UserService, AlertService } from './_services/index';
 
 @NgModule({
     imports:
     [
         BrowserModule,
-        RouterModule.forRoot(appRoutes)
+        FormsModule,
+        HttpModule,
+        routing
     ],
     declarations: [
         AppComponent,
@@ -29,6 +36,17 @@ const appRoutes: Routes = [
         MenuListComponent,
         ManagerComponent,
         LoginComponent
+    ],
+    providers: [
+        AuthGuard,
+        AuthenticationService,
+        UserService,
+        AlertService,
+
+        // providers used to create fake backend
+        fakeBackendProvider,
+        MockBackend,
+        BaseRequestOptions
     ],
     bootstrap: [
         AppComponent

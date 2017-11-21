@@ -8,33 +8,44 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
-const router_1 = require("@angular/router");
+const forms_1 = require("@angular/forms");
+const http_1 = require("@angular/http");
+const index_1 = require("./_helpers/index");
+const testing_1 = require("@angular/http/testing");
+const http_2 = require("@angular/http");
 const app_component_1 = require("./nav/app.component");
-const home_component_1 = require("./home/home.component");
-const menuList_component_1 = require("./menu/menuList.component");
-const manager_component_1 = require("./manager/manager.component");
-const login_component_1 = require("./login/login.component");
-const appRoutes = [
-    { path: '', component: home_component_1.HomeComponent, pathMatch: 'full' },
-    { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'menu', component: menuList_component_1.MenuListComponent },
-    { path: 'manager', component: manager_component_1.ManagerComponent },
-    { path: 'login', component: login_component_1.LoginComponent }
-];
+const app_routing_1 = require("./app.routing");
+const index_2 = require("./home/index");
+const index_3 = require("./menu/index");
+const index_4 = require("./manager/index");
+const index_5 = require("./login/index");
+const index_6 = require("./_guards/index");
+const index_7 = require("./_services/index");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot(appRoutes)
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            app_routing_1.routing
         ],
         declarations: [
             app_component_1.AppComponent,
-            home_component_1.HomeComponent,
-            menuList_component_1.MenuListComponent,
-            manager_component_1.ManagerComponent,
-            login_component_1.LoginComponent
+            index_2.HomeComponent,
+            index_3.MenuListComponent,
+            index_4.ManagerComponent,
+            index_5.LoginComponent
+        ],
+        providers: [
+            index_6.AuthGuard,
+            index_7.AuthenticationService,
+            index_7.UserService,
+            index_7.AlertService,
+            index_1.fakeBackendProvider,
+            testing_1.MockBackend,
+            http_2.BaseRequestOptions
         ],
         bootstrap: [
             app_component_1.AppComponent

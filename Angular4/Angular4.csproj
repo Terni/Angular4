@@ -162,6 +162,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\home\index.ts" />
+    <TypeScriptCompile Include="app\login\index.ts" />
     <TypeScriptCompile Include="app\nav\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\login\login.component.ts" />
@@ -171,6 +174,16 @@
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\menu\menuList.component.ts" />
     <TypeScriptCompile Include="app\vendor.ts" />
+    <TypeScriptCompile Include="app\_guards\auth.guard.ts" />
+    <TypeScriptCompile Include="app\_guards\index.ts" />
+    <TypeScriptCompile Include="app\_helpers\fake-backend.ts" />
+    <TypeScriptCompile Include="app\_helpers\index.ts" />
+    <TypeScriptCompile Include="app\_models\index.ts" />
+    <TypeScriptCompile Include="app\_models\user.ts" />
+    <TypeScriptCompile Include="app\_services\alert.service.ts" />
+    <TypeScriptCompile Include="app\_services\authentication.service.ts" />
+    <TypeScriptCompile Include="app\_services\index.ts" />
+    <TypeScriptCompile Include="app\_services\user.service.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

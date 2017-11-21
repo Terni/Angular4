@@ -9,10 +9,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 let AlertService = class AlertService {
     ShowAlertSuccess(textToShow) {
+        $.iGrowl({
+            type: 'success',
+            message: textToShow,
+            icon: 'vicons-forward',
+            placement: {
+                x: 'left',
+                y: 'top'
+            },
+            animation: true,
+            animShow: 'bounceIn',
+            animHide: 'bounceOutRight'
+        });
     }
     ShowAlertInfo(textToShow) {
+        $.iGrowl({
+            type: 'notice',
+            message: textToShow,
+            icon: 'vicons-forward',
+            placement: {
+                x: 'right',
+                y: 'top'
+            },
+            animation: true,
+            animShow: 'bounceIn',
+            animHide: 'bounceOut'
+        });
     }
     ShowAlertError(textToShow) {
+        $.iGrowl({
+            type: 'error',
+            message: textToShow,
+            delay: 0,
+            icon: 'vicons-cancel',
+            placement: {
+                x: 'right',
+                y: 'top'
+            },
+            animation: true,
+            animShow: 'bounceIn',
+            animHide: 'bounceOutRight'
+        });
     }
 };
 AlertService = __decorate([

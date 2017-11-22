@@ -23,15 +23,17 @@
 ## API
 [ ] GET> Model pro Restaurace (Prio 1)
 ```
-{
+{ 
   "Restaurant": [
     {
       "Name": "Pour Zlin",
+      "Locale": "Zlín",
       "Body": [
         {
+          "Date": "22.11.2017",
           "MenuList": [
             {
-              "Menu": "Text menu.",
+              "Menu": "Text menu22.",
               "Cena": 122
             },
             {
@@ -40,15 +42,15 @@
             },
             {
               "Menu": "Text menu.",
-              "Cena": 100
+              "Cena": 110
             }
-          ],
-          "Date": "1.10.2017"
+          ]
         },
         {
+          "Date": "23.11.2017",
           "MenuList": [
             {
-              "Menu": "Text menu.",
+              "Menu": "Text menu23.",
               "Cena": 122
             },
             {
@@ -57,53 +59,34 @@
             },
             {
               "Menu": "Text menu.",
-              "Cena": 100
+              "Cena": 110
             }
-          ],
-          "Date": "2.10.2017"
+          ]
         }
-      ],
-      "Locale": "Zlín"
+      ]
     },
     {
-      "Name": "Potrefená Husa",
+      "Name": "Potrefená husa",
+      "Locale": "Brno",
       "Body": [
         {
+          "Date": "22.11.2017",
           "MenuList": [
             {
-              "Menu": "Text menu.",
+              "Menu": "Text menu22.",
               "Cena": 122
             },
             {
-              "Menu": "Text menu.",
+              "Menu": "Text menu22.",
               "Cena": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 100
+              "Cena": 110
             }
-          ],
-          "Date": "2.10.2017"
-        },
-        {
-          "MenuList": [
-            {
-              "Menu": "Text menu.",
-              "Cena": 122
-            },
-            {
-              "Menu": "Text menu.",
-              "Cena": 95
-            },
-            {
-              "Menu": "Text menu.",
-              "Cena": 100
-            }
-          ],
-          "Date": "3.10.2017"
+          ]
         }
-      ],
-      "Locale": "Brno"
+      ]
     }
   ]
 }

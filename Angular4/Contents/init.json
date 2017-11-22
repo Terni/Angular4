@@ -1,0 +1,356 @@
+﻿{
+  "Restaurant": [
+    {
+      "Name": "Pour Zlin",
+      "Locale": "Zlín",
+      "Body": [
+        {
+          "Date": "22.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu22.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "23.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu23.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "24.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu24.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "27.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu27.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "28.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu28.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "29.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu29.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "30.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu30.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "1.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu1.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "4.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu4.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "5.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Potrefená husa",
+      "Locale": "Brno",
+      "Body": [
+        {
+          "Date": "22.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu22.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu22.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "23.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu23.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu23.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "24.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu24.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu24.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "27.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu27.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu27.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "28.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu28.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu28.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "29.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu29.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu29.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "30.11.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu30.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu30.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "1.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu1.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu1.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "4.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu4.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        },
+        {
+          "Date": "5.12.2017",
+          "MenuList": [
+            {
+              "Menu": "Text menu.",
+              "Cena": 122
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 95
+            },
+            {
+              "Menu": "Text menu.",
+              "Cena": 110
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -133,6 +133,8 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="package.json" />
+    <Content Include="assets\init.txt" />
+    <Content Include="assets\init2.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -183,8 +185,10 @@
     <TypeScriptCompile Include="app\_services\authentication.service.ts" />
     <TypeScriptCompile Include="app\_services\data.service.ts" />
     <TypeScriptCompile Include="app\_services\index.ts" />
+    <TypeScriptCompile Include="app\_services\load.service.ts" />
     <TypeScriptCompile Include="app\_services\user.service.ts" />
-    <TypeScriptCompile Include="typings.d.ts" />
+    <TypeScriptCompile Include="text-typings.d.ts" />
+    <TypeScriptCompile Include="json-typings.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

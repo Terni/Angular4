@@ -13,6 +13,7 @@ export class UserService {
         private authenticationService: AuthenticationService) {
     }
 
+    // methods
     getUsers(): Observable<User[]> {
         // add authorization header with jwt token
         let headers = new Headers({ 'Authorization': 'Bearer ' + this.authenticationService.token });

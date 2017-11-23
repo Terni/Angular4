@@ -15,10 +15,11 @@ export class ManagerComponent {
 
     ngOnInit() {
         // get users from secure api end point
-        this.userService.getUsers()
-            .subscribe(users => {
+        this.userService.getUsers().subscribe(
+            users => {
                 this.users = users;
-            });
+            }
+        );
 
         this.alertService.ShowAlertInfo("Aministration");
 

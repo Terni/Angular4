@@ -9,24 +9,32 @@ import { Restaurant } from '../_models/index';
 
 @Injectable()
 export class DataService {
+    // variables
+    restaurants: Restaurant[] = [];
 
-    constructor(private http: Http) {
-        //let restaurants: Restaurant[] = [];
-        let obj;
-        this.getRestaurants().subscribe(data => obj = data, error => console.log(error));
+    constructor(private http: Http) { }
 
-        //let allrest: Array<Restaurant> = obj;
-        console.log('Vystup.');
-        console.log(obj);
-    }
+    // methods
+    getRestaurants(): Observable<boolean> {
 
-    public getRestaurants(): Observable<any> {
+        // get restaurants from api
         return this.http.get('/api/restaurants')
-            .map((response: Response) => response.json());
-            //.catch(this.handleError);
+            .map((response: Response) => {
+                let result = response.json();
+                if (result) {
+                    // store result with restaurants
+                    localStorage.setItem('allRestaurants', JSON.stringify({ restaurants: result }));
+
+                    return true;
+                } else {
+                    return false;
+                }
+
+            })
+            .catch(this.handleError);
     }
 
-    public handleError(error: Response) {
+    private handleError(error: Response) {
         console.error(error);
         return Observable.throw(error.json().error || 'Error with json file.');
     }

@@ -6,6 +6,8 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
     backend.connections.subscribe((connection: MockConnection) => {
         let testUser = { username: 'admin', password: 'admin'};
 
+        let testListRestaurants = { test: 'test' };
+
         // wrap in timeout to simulate server api call
         setTimeout(() => {
 
@@ -40,6 +42,14 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
                         new ResponseOptions({ status: 401 })
                     ));
                 }
+            }
+
+            // fake restaurants api end point
+            if (connection.request.url.endsWith('/api/restaurants') && connection.request.method === RequestMethod.Get) {
+
+                connection.mockRespond(new Response(
+                    new ResponseOptions({ status: 200, body: [testListRestaurants] })
+                ));
             }
 
         }, 500);

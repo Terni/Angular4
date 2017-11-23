@@ -2,22 +2,22 @@
   "Restaurant": [
     {
       "Name": "Pour Zlin",
-      "Locale": "Zlín",
+      "Location": "Zlín",
       "Body": [
         {
           "Date": "22.11.2017",
           "MenuList": [
             {
               "Menu": "Text menu22.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -26,15 +26,15 @@
           "MenuList": [
             {
               "Menu": "Text menu23.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -43,15 +43,15 @@
           "MenuList": [
             {
               "Menu": "Text menu24.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -60,15 +60,15 @@
           "MenuList": [
             {
               "Menu": "Text menu27.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -77,15 +77,15 @@
           "MenuList": [
             {
               "Menu": "Text menu28.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -94,15 +94,15 @@
           "MenuList": [
             {
               "Menu": "Text menu29.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -111,15 +111,15 @@
           "MenuList": [
             {
               "Menu": "Text menu30.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -128,15 +128,15 @@
           "MenuList": [
             {
               "Menu": "Text menu1.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -145,15 +145,15 @@
           "MenuList": [
             {
               "Menu": "Text menu4.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -162,15 +162,15 @@
           "MenuList": [
             {
               "Menu": "Text menu.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         }
@@ -178,22 +178,22 @@
     },
     {
       "Name": "Potrefená husa",
-      "Locale": "Brno",
+      "Location": "Brno",
       "Body": [
         {
           "Date": "22.11.2017",
           "MenuList": [
             {
               "Menu": "Text menu22.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu22.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -202,15 +202,15 @@
           "MenuList": [
             {
               "Menu": "Text menu23.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu23.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -219,15 +219,15 @@
           "MenuList": [
             {
               "Menu": "Text menu24.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu24.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -236,15 +236,15 @@
           "MenuList": [
             {
               "Menu": "Text menu27.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu27.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -253,15 +253,15 @@
           "MenuList": [
             {
               "Menu": "Text menu28.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu28.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -270,15 +270,15 @@
           "MenuList": [
             {
               "Menu": "Text menu29.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu29.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -287,15 +287,15 @@
           "MenuList": [
             {
               "Menu": "Text menu30.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu30.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -304,15 +304,15 @@
           "MenuList": [
             {
               "Menu": "Text menu1.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu1.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -321,15 +321,15 @@
           "MenuList": [
             {
               "Menu": "Text menu4.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         },
@@ -338,15 +338,15 @@
           "MenuList": [
             {
               "Menu": "Text menu.",
-              "Cena": 122
+              "Price": 122
             },
             {
               "Menu": "Text menu.",
-              "Cena": 95
+              "Price": 95
             },
             {
               "Menu": "Text menu.",
-              "Cena": 110
+              "Price": 110
             }
           ]
         }

@@ -144,9 +144,8 @@
     <Content Include="Contents\css\Boostrap\bootstrap.css.map" />
     <Content Include="Contents\css\Boostrap\bootstrap.min.css.map" />
     <Content Include="Contents\css\default.less" />
-    <Content Include="typings.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="Contents\init.json" />
+    <Content Include="assets\init.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -178,11 +177,14 @@
     <TypeScriptCompile Include="app\_helpers\fake-backend.ts" />
     <TypeScriptCompile Include="app\_helpers\index.ts" />
     <TypeScriptCompile Include="app\_models\index.ts" />
+    <TypeScriptCompile Include="app\_models\restaurant.ts" />
     <TypeScriptCompile Include="app\_models\user.ts" />
     <TypeScriptCompile Include="app\_services\alert.service.ts" />
     <TypeScriptCompile Include="app\_services\authentication.service.ts" />
+    <TypeScriptCompile Include="app\_services\data.service.ts" />
     <TypeScriptCompile Include="app\_services\index.ts" />
     <TypeScriptCompile Include="app\_services\user.service.ts" />
+    <TypeScriptCompile Include="typings.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

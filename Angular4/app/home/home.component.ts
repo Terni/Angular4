@@ -16,9 +16,13 @@ export class HomeComponent {
     restCurrentList: Restaurant[] =[];
     dataStatus: boolean;
 
+    date: Date;
+
+
     constructor(private dataService: DataService) { }
 
     ngOnInit() {
+        this.date = new Date();
 
         this.dataService.getRestaurants().subscribe(
             data => this.dataStatus = data,
@@ -40,6 +44,7 @@ export class HomeComponent {
             console.log(this.restaurants.Restaurants.Restaurant[0].Location);
 
             this.restCurrentList = this.restaurants.Restaurants.Restaurant;
+
             this.restaurants.Restaurants.Restaurant.forEach((obj: Restaurant) => {
                 console.log(obj);
                 this.restCurrent = obj;

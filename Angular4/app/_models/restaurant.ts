@@ -5,6 +5,8 @@
 export class Restaurant {
     Name: string;
     Location: string;
+    Description: string;
+    Note: string;
     Body: Array<Body>;
 }
 

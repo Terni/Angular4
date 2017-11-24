@@ -28,6 +28,8 @@
     {
       "Name": "Pour Zlin",
       "Locale": "Zlín",
+      "Description": "Základní informace o Plzeňské restauraci.",
+      "Note:": "...",
       "Body": [
         {
           "Date": "22.11.2017",
@@ -68,6 +70,8 @@
     {
       "Name": "Potrefená husa",
       "Locale": "Brno",
+      "Description": "Základní informace o Plzeňské restauraci.",
+      "Note:": "...",
       "Body": [
         {
           "Date": "22.11.2017",

@@ -5,7 +5,7 @@
         <label for="exampleFormControlSelect1">Vyberte Den:</label>
         <div class="btn-toolbar" role="toolbar">
             <div class="btn-group mr-2" role="group" aria-label="First group">
-                <input type="date" class="form-control" name="text2" readonly>
+                <input type="date" class="form-control" name="text2" value="{{date}}" >
             </div>
             <div class="btn-group mr-2" role="group" aria-label="First group">
                 <button type="submit" class="btn btn-outline-info btn-block btn-lg"><</button>
@@ -29,21 +29,16 @@
                         <small>{{ rest.Location }}</small>
                     </div>
                     <ol>
-                        <li>
-                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
-                            </p></li>
-                        <li>
-                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
-                            </p></li>
-                        <li>
-                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
-                            </p></li>
+                        <li *ngFor="let menu of rest.Body[0].MenuList">
+                            <p class="alignleft">{{ menu.Menu }}<span class="alignright"> {{ menu.Price }},-</span></p>
+                        </li>
                     </ol>
-                    <p class="mb-1">*Poznámka: ...</p>
+                    <p class="mb-1">*Poznámka: {{ rest.Note }}</p>
                 </a>
             </div>
             <div class="col-1">
-                <button type="button" class="btn btn-block btn-info " id="DetailButton" data-toggle="modal" data-target="#DetailModal" data-RestName="Název restaurace" data-FullDescription="test">?</button>
+                <!--<button type="button" class="btn btn-block btn-info " id="DetailButton" data-toggle="modal" data-target="#DetailModal" data-RestName="Nazev restaurace" data-Description="popis">?</button>-->
+                <button type="button" class="btn btn-block btn-info " id="DetailButton" data-toggle="modal" data-target="#DetailModal" name="{{ rest.Name }}" title="{{ rest.Description }}">?</button>
             </div>
         </div>
 

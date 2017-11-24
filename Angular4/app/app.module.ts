@@ -20,7 +20,7 @@ import { LoginComponent } from './login/index';
 
 //Login guard and services for currentUser
 import { AuthGuard } from './_guards/index';
-import { AuthenticationService, UserService, AlertService, DataService, LoadService } from './_services/index';
+import { AuthenticationService, UserService, AlertService, DataService, LoadService, CommonService } from './_services/index';
 
 @NgModule({
     imports:
@@ -44,6 +44,7 @@ import { AuthenticationService, UserService, AlertService, DataService, LoadServ
         AlertService,
         DataService,
         LoadService,
+        CommonService,
 
         // providers used to create fake backend
         fakeBackendProvider,

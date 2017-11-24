@@ -10,12 +10,12 @@ export class Restaurant {
     Body: Array<Body>;
 }
 
-class Body {
+export class Body {
     Date: Date;
     MenuList: Array<MenuList>;
 }
 
-class MenuList {
+export class MenuList {
     Menu: string;
     Price: number;
 }

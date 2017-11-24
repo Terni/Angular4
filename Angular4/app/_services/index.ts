@@ -3,3 +3,4 @@ export * from './user.service';
 export * from './alert.service';
 export * from './data.service';
 export * from './load.service';
+export * from './common.service';

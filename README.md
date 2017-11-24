@@ -1,7 +1,7 @@
 # Angular4
 ## Zadání: Vytvořte aplikaci pro tvorbu online menu pokrmů pro restaurace.
 
-- [ ] Na hlavní stránce se vypíšou všechny restaurace s platným menu a náhledem menu pro daný den
+- [x] Na hlavní stránce se vypíšou všechny restaurace s platným menu a náhledem menu pro daný den
 - [ ] a uživatel také bude mít možnost změnit "datum" aby se podíval hromadně na menu pro daný den ve všech restauracích.
 
 - [ ] Po kliknutí na konkrétní restauraci se ukáže celé menu na celý týden s možností přecházet na další týdny.
@@ -29,7 +29,7 @@
       "Name": "Pour Zlin",
       "Locale": "Zlín",
       "Description": "Základní informace o Plzeňské restauraci.",
-      "Note:": "...",
+      "Note": "...",
       "Body": [
         {
           "Date": "22.11.2017",
@@ -71,7 +71,7 @@
       "Name": "Potrefená husa",
       "Locale": "Brno",
       "Description": "Základní informace o Plzeňské restauraci.",
-      "Note:": "...",
+      "Note": "...",
       "Body": [
         {
           "Date": "22.11.2017",

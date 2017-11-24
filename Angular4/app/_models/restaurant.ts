@@ -1,4 +1,8 @@
-﻿export class Restaurant {
+﻿/*export class AllRestaurants {
+    Restaurants: Array<Restaurant>;
+}*/
+
+export class Restaurant {
     Name: string;
     Location: string;
     Body: Array<Body>;

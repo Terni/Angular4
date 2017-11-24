@@ -19,21 +19,27 @@
 
 
     <h5>Vyber restauraci pro zobrazení týdenního menu.</h5>
-    <div id="List">
+    <div id="List" *ngFor="let rest of restCurrentList">
         <!--Dynamic content-->
         <div class="row">
             <div class="col-11">
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="'neco'">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Název restaurace</h5>
-                        <small>Pondělí</small>
+                        <h5 class="mb-1">{{ rest.Name }}</h5>
+                        <small>{{ rest.Location }}</small>
                     </div>
                     <ol>
-                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
-                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
-                        <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
+                        <li>
+                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
+                            </p></li>
+                        <li>
+                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
+                            </p></li>
+                        <li>
+                            <p class="alignleft">Text menu.<span class="alignright"> 122,-</span>
+                            </p></li>
                     </ol>
-                    <p class="mb-1">*Poznámka: text text ...</p>
+                    <p class="mb-1">*Poznámka: ...</p>
                 </a>
             </div>
             <div class="col-1">

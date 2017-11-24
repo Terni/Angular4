@@ -10,7 +10,7 @@ import { Restaurant } from '../_models/index';
 @Injectable()
 export class DataService {
     // variables
-    restaurants: Restaurant[] = [];
+    //restaurants: Restaurant[] = [];
 
     constructor(private http: Http) { }
 
@@ -23,7 +23,8 @@ export class DataService {
                 let result = response.json();
                 if (result) {
                     // store result with restaurants
-                    localStorage.setItem('allRestaurants', JSON.stringify({ restaurants: result }));
+                    localStorage.setItem('allRestaurants', JSON.stringify({ Restaurants: result }));
+                    //localStorage.setItem('allRestaurants', JSON.stringify(result));
 
                     return true;
                 } else {

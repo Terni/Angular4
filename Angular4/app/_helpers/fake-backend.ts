@@ -83,7 +83,7 @@ export function fakeBackendFactory(backend: MockBackend, options: BaseRequestOpt
 
                 connection.mockRespond(new Response(
                     //new ResponseOptions({ status: 200, body: [testListRestaurants] })
-                    new ResponseOptions({ status: 200, body: [dataJson] })
+                    new ResponseOptions({ status: 200, body: dataJson })
                 ));
             }
 

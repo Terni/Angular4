@@ -10,7 +10,10 @@ import { DataService } from '../_services/index';
 })
 export class HomeComponent {
 
-    restaurants: Restaurant[] = [];
+    //restaurants: Restaurant[] = [];
+    restaurants: any;
+    restCurrent: Restaurant;
+    restCurrentList: Restaurant[] =[];
     dataStatus: boolean;
 
     constructor(private dataService: DataService) { }
@@ -29,6 +32,19 @@ export class HomeComponent {
 
             this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
             console.log(this.restaurants);
+            var res = localStorage.getItem('allRestaurants');
+            console.log(res);
+
+            // for test
+            console.log(this.restaurants.Restaurants.Restaurant[0].Name);
+            console.log(this.restaurants.Restaurants.Restaurant[0].Location);
+
+            this.restCurrentList = this.restaurants.Restaurants.Restaurant;
+            this.restaurants.Restaurants.Restaurant.forEach((obj: Restaurant) => {
+                console.log(obj);
+                this.restCurrent = obj;
+            });
+
             // for test
             //var allRestaurants = JSON.parse(localStorage.getItem('allRestaurants'));
             //console.log(allRestaurants);

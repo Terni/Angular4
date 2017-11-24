@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\_services\common.service.ts" />
     <TypeScriptCompile Include="app\home\index.ts" />
     <TypeScriptCompile Include="app\login\index.ts" />
     <TypeScriptCompile Include="app\nav\app.component.ts" />

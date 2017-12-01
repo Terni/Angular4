@@ -1,11 +1,11 @@
 ﻿<div class="container containerSpc">
-    <h1>Name Restaurant</h1>
+    <h1>{{ nameRest }}</h1>
 
     <div class="form-group">
         <label for="exampleFormControlSelect1">Vyberte Týden:</label>
         <div class="btn-toolbar" role="toolbar">
             <div class="btn-group mr-2" role="group" aria-label="First group">
-                <input type="date" class="form-control" name="weekDate1" readonly>
+                <input id="InputDateWeek_1" type="text" class="form-control" value="{{dateFirstSet | date: 'dd.MM.yyyy'}}" name="weekDate1" readonly>
             </div>
 
             <div class="btn-group mr-2" style="padding: 10px 0 0 0;" role="group" aria-label="Second group">
@@ -13,7 +13,7 @@
             </div>
 
             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                <input type="date" class="form-control" name="weekDate2" readonly>
+                <input id="InputDateWeek_2" type="text" class="form-control" value="{{dateLastSet | date: 'dd.MM.yyyy'}}"  name="weekDate2" readonly>
             </div>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
                 <button type="submit" class="btn btn-outline-info btn-block btn-lg"><</button>
@@ -32,36 +32,39 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item thumbnail active">
-                <!--<img class="d-block w-100" src="contents/images/menu.jpg" alt="First slide">-->
+            <!--<div class="carousel-item thumbnail active" *ngFor="let mBody of weekBody; let i = index">
+                <img class="d-block w-100" src="contents/images/menu.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block baseDiv">
-                    <h3>Pondělí</h3>
+                    <h3>{{ nameDays[0] }}</h3>
                     <div class="jumbotron opaque75 baseText">
                         <ol>
-                            <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
-                            <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
-                            <li><p class="alignleft">Text menu.<span class="alignright"> 122,-</span></p></li>
+                            <li><p class="alignleft">{{ mBody.MenuList[0].Menu }}<span class="alignright"> {{ mBody.MenuList[0].Price }},-</span></p></li>
+                            <li><p class="alignleft">{{ mBody.MenuList[1].Menu }}<span class="alignright"> {{ mBody.MenuList[1].Price }},-</span></p></li>
+                            <li><p class="alignleft">{{ mBody.MenuList[2].Menu }}<span class="alignright"> {{ mBody.MenuList[2].Price }},-</span></p></li>
 
                         </ol>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item thumbnail">
-                <!--<img class="d-block w-100" src="contents/images/menu.jpg" alt="Second slide">-->
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Best slice</h3>
-                    <p>ahoj</p>
+            </div>-->
+
+            <div class="carousel-item thumbnail" *ngFor="let mBody of weekBody; let i = index" [ngClass]="{ 'active': i == 0 }">
+                <div class="carousel-caption d-none d-md-block baseDiv">
+                    <h3>{{ nameDays[i] }}</h3>
+                    <div class="jumbotron opaque75 baseText">
+                        <ol>
+                            <li><p class="alignleft">{{ mBody.MenuList[0].Menu }}<span class="alignright"> {{ mBody.MenuList[0].Price }},-</span></p></li>
+                            <li><p class="alignleft">{{ mBody.MenuList[1].Menu }}<span class="alignright"> {{ mBody.MenuList[1].Price }},-</span></p></li>
+                            <li><p class="alignleft">{{ mBody.MenuList[2].Menu }}<span class="alignright"> {{ mBody.MenuList[2].Price }},-</span></p></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item thumbnail">
-                <!--<img class="d-block w-100" src="contents/images/menu.jpg" alt="Third slide">-->
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Best slice</h3>
-                    <p>ahoj</p>
-                </div>
-            </div>
+
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -40,8 +40,8 @@ export class HomeComponent {
     constructor(private dataService: DataService, private commonService: CommonService) { }
 
     ngOnInit() {
-        this.date = new Date();
-        this.dateCurrentSet = new Date();
+        this.date = new Date(); //? actual date
+        this.dateCurrentSet = new Date(); //? set date from user
 
         this.dataService.getRestaurants().subscribe(
             data => this.dataStatus = data,
@@ -51,39 +51,40 @@ export class HomeComponent {
 
         setTimeout(() => { // through delay from server
 
+            //! load data form localStorage
             console.log('Data for restaurants: ' + this.dataStatus);
-
             this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
-            console.log(this.restaurants);
+            //console.log(this.restaurants);
+
             //var res = localStorage.getItem('allRestaurants');
             //console.log(res);
 
             // for test
             //console.log(this.restaurants.Restaurants.Restaurant[0].Name);
             //console.log(this.restaurants.Restaurants.Restaurant[0].Location);
-
-            //this.restCurrentList = this.restaurants.Restaurants.Restaurant;
-
-            this.commonService.ShowReportForm(); // for modal windows
+            //this.restCurrentList = this.restaurants.Restaurants.Restaurant; // without check
 
 
+            //! for modal windows
+            this.commonService.ShowReportForm();
+
+
+            var datePipe = new DatePipe("en-US");
+            var formatDate = datePipe.transform(this.date, 'dd.MM.yyyy');
+
+            //! This code check and loud restaurant according to current display date
             this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
-                console.log(obj1);
+                //console.log(obj1);
 
                 this.restCurrent = Object.assign({}, obj1);  //! deep copy
                 this.restCurrent.Body = []; //! clear array
 
                 obj1.Body.forEach((obj2: Body) => {
-                    console.log(obj2);
-
-
-                    var datePipe = new DatePipe("en-US");
-                    var formatDate = datePipe.transform(this.date, 'dd.MM.yyyy');
-
+                    //console.log(obj2);
 
                     if (obj2.Date.toString() === formatDate.toString()) {// for check good date
                         this.restCurrent.Body.push(obj2);
-                        console.log("add");
+                        //console.log("add");
                     }
 
                 });
@@ -91,29 +92,41 @@ export class HomeComponent {
                 if (this.restCurrent.Body.length > 0) {
                     this.restCurrentList.push(this.restCurrent);
                 }
-
-
-
             });
-
-            // for test
-            //var allRestaurants = JSON.parse(localStorage.getItem('allRestaurants'));
-            //console.log(allRestaurants);
-        }, 2000);
+        }, 1000);
 
     }
 
+    onClickMenu(nameRest:string) {
 
-    OnClickRight() {
+        this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
+            //console.log(obj1);
+
+            //! check for equvalent name
+            if (nameRest.localeCompare(obj1.Name) === 0) {
+
+                this.restCurrent = Object.assign({}, obj1); //! deep copy
+                localStorage.setItem('currentRestaurant', JSON.stringify(this.restCurrent));
+            }
+
+        });
+    }
+
+
+    onClickRight() {
         this.dateCurrentSet.setDate(this.dateCurrentSet.getDate() + 1);
         this.restCurrentList = [];
 
-        console.log('Data for restaurants: ' + this.dataStatus);
-
-        this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
+        //console.log('Data for restaurants: ' + this.dataStatus);
+        //this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
         //console.log(this.restaurants);
 
         this.commonService.ShowReportForm(); // for modal windows
+
+
+        var datePipe = new DatePipe("en-US");
+        var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
+        this.commonService.ChangeDateForm(formatDate.toString()); //! change input
 
         //! check all items
         this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
@@ -125,9 +138,6 @@ export class HomeComponent {
             obj1.Body.forEach((obj2: Body) => {
                 //console.log(obj2);
 
-                var datePipe = new DatePipe("en-US");
-                var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
-                this.commonService.ChangeDateForm(formatDate.toString()); //! change input
 
                 if (obj2.Date.toString() === formatDate.toString()) {// for check good date
                     this.restCurrent.Body.push(obj2);
@@ -142,17 +152,20 @@ export class HomeComponent {
         });
     }
 
-    OnClickLeft() {
+    onClickLeft() {
         this.dateCurrentSet.setDate(this.dateCurrentSet.getDate() - 1);
-
         this.restCurrentList = [];
 
-        console.log('Data for restaurants: ' + this.dataStatus);
-
-        this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
+        //console.log('Data for restaurants: ' + this.dataStatus);
+        //this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
         //console.log(this.restaurants);
 
         this.commonService.ShowReportForm(); // for modal windows
+
+
+        var datePipe = new DatePipe("en-US");
+        var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
+        this.commonService.ChangeDateForm(formatDate.toString()); //! change input
 
         //! check all items
         this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
@@ -164,9 +177,7 @@ export class HomeComponent {
             obj1.Body.forEach((obj2: Body) => {
                 //console.log(obj2);
 
-                var datePipe = new DatePipe("en-US");
-                var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
-                this.commonService.ChangeDateForm(formatDate.toString()); //! change input
+
 
                 if (obj2.Date.toString() === formatDate.toString()) {// for check good date
                     this.restCurrent.Body.push(obj2);

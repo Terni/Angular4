@@ -4,6 +4,7 @@ declare var $: any; // hack for jquery chars
 @Injectable()
 export class CommonService {
 
+    //! This function for replace Body and Title on ModalWindow
     ShowReportForm(): void {
 
         $(document).on('click','.btn',
@@ -16,8 +17,14 @@ export class CommonService {
             });
     }
 
+    //! This function for replace date to "input""
     ChangeDateForm(textDate: string): void {
-
         $('#InputDate').val(textDate);
     }
+
+    ChangeWeekDateForm(textDate1: string, textDate2: string): void {
+        $('#InputDateWeek_1').val(textDate1);
+        $('#InputDateWeek_2').val(textDate2);
+    }
+
 }

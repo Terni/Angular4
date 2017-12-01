@@ -8,10 +8,10 @@
                 <input id="InputDate" type="text" class="form-control" name="text2" value="{{dateCurrentSet | date: 'dd.MM.yyyy'}}" readonly>
             </div>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                <button type="submit" class="btn btn-outline-info btn-block btn-lg" (click)="OnClickLeft()"><</button>
+                <button type="submit" class="btn btn-outline-info btn-block btn-lg" (click)="onClickLeft()"><</button>
             </div>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
-                <button type="submit" class="btn btn-outline-info btn-block btn-lg" (click)="OnClickRight()">></button>
+                <button type="submit" class="btn btn-outline-info btn-block btn-lg" (click)="onClickRight()">></button>
                 <!--<input type="checkbox" checked="checked"> Remember me-->
             </div>
         </div>
@@ -23,7 +23,7 @@
         <!--Dynamic content-->
         <div class="row">
             <div class="col-11">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-id="'neco'">
+                <a class="list-group-item list-group-item-action flex-column align-items-start" routerLink="/menu" routerLinkActive="active" data-id="{{ rest.Name }}" (click)="onClickMenu(rest.Name)" >
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">{{ rest.Name }}</h5>
                         <small>{{ rest.Location }}</small>

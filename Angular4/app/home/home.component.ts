@@ -1,6 +1,6 @@
 import { Component, OnInit, Pipe, PipeTransform, ChangeDetectorRef, ChangeDetectionStrategy} from '@angular/core';
 
-import { Restaurant, Body, MenuList } from '../_models/index';
+import { Restaurant, Body, MenuList, CurrentData } from '../_models/index';
 import { DataService, CommonService } from '../_services/index';
 
 
@@ -33,6 +33,8 @@ export class HomeComponent {
     restCurrentList: Restaurant[] =[];
     dataStatus: boolean;
 
+    currentData: CurrentData;
+
     date: Date;
     dateCurrentSet: Date;
 
@@ -54,6 +56,7 @@ export class HomeComponent {
             //! load data form localStorage
             console.log('Data for restaurants: ' + this.dataStatus);
             this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
+            if (this.restaurants == null) return -1;
             //console.log(this.restaurants);
 
             //var res = localStorage.getItem('allRestaurants');
@@ -98,31 +101,29 @@ export class HomeComponent {
     }
 
     onClickMenu(nameRest:string) {
+        if (this.restaurants == null) return -1;
 
+        this.currentData = new CurrentData(); // define init for class
         this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
             //console.log(obj1);
 
             //! check for equvalent name
             if (nameRest.localeCompare(obj1.Name) === 0) {
-
                 this.restCurrent = Object.assign({}, obj1); //! deep copy
-                localStorage.setItem('currentRestaurant', JSON.stringify(this.restCurrent));
+                this.currentData.Date = this.dateCurrentSet;
+                this.currentData.Restaurant = this.restCurrent;
+                localStorage.setItem('currentData', JSON.stringify(this.currentData));
             }
-
         });
     }
 
 
     onClickRight() {
+        if (this.restaurants == null) return -1;
+
         this.dateCurrentSet.setDate(this.dateCurrentSet.getDate() + 1);
         this.restCurrentList = [];
-
-        //console.log('Data for restaurants: ' + this.dataStatus);
-        //this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
-        //console.log(this.restaurants);
-
-        this.commonService.ShowReportForm(); // for modal windows
-
+        //this.commonService.ShowReportForm(); // for modal windows
 
         var datePipe = new DatePipe("en-US");
         var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
@@ -130,20 +131,14 @@ export class HomeComponent {
 
         //! check all items
         this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
-            //console.log(obj1);
 
             this.restCurrent = Object.assign({}, obj1);  //! deep copy
             this.restCurrent.Body = []; //! clear array
 
             obj1.Body.forEach((obj2: Body) => {
-                //console.log(obj2);
-
-
                 if (obj2.Date.toString() === formatDate.toString()) {// for check good date
                     this.restCurrent.Body.push(obj2);
-                    //console.log("add");
                 }
-
             });
 
             if (this.restCurrent.Body.length > 0) {
@@ -153,15 +148,11 @@ export class HomeComponent {
     }
 
     onClickLeft() {
+        if (this.restaurants == null) return -1;
+
         this.dateCurrentSet.setDate(this.dateCurrentSet.getDate() - 1);
         this.restCurrentList = [];
-
-        //console.log('Data for restaurants: ' + this.dataStatus);
-        //this.restaurants = JSON.parse(localStorage.getItem('allRestaurants'));
-        //console.log(this.restaurants);
-
-        this.commonService.ShowReportForm(); // for modal windows
-
+        //this.commonService.ShowReportForm(); // for modal windows
 
         var datePipe = new DatePipe("en-US");
         var formatDate = datePipe.transform(this.dateCurrentSet, 'dd.MM.yyyy');
@@ -169,21 +160,14 @@ export class HomeComponent {
 
         //! check all items
         this.restaurants.Restaurants.Restaurant.forEach((obj1: Restaurant) => {
-            //console.log(obj1);
 
             this.restCurrent = Object.assign({}, obj1);  //! deep copy
             this.restCurrent.Body = []; //! clear array
 
             obj1.Body.forEach((obj2: Body) => {
-                //console.log(obj2);
-
-
-
                 if (obj2.Date.toString() === formatDate.toString()) {// for check good date
                     this.restCurrent.Body.push(obj2);
-                    //console.log("add");
                 }
-
             });
 
             if (this.restCurrent.Body.length > 0) {

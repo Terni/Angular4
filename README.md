@@ -1,4 +1,4 @@
-# Angular4
+# Angular4 - [obsolete]
 ## Zadání: Vytvořte aplikaci pro tvorbu online menu pokrmů pro restaurace.
 
 - [x] Na hlavní stránce se vypíšou všechny restaurace s platným menu a náhledem menu pro daný den
